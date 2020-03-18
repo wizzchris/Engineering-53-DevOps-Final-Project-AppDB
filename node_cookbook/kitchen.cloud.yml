@@ -1,11 +1,11 @@
 ---
 driver:
   name: ec2
-  security_group_ids: ["sg-02f107d41422f3fbc"]
   region: eu-west-1
   require_chef_omnibus: true
   associate_public_ip: true
   interface: public
+  instance_type: t2.micro
 
 transport:
   connection_timeout: 10
