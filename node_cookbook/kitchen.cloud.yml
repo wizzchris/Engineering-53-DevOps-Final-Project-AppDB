@@ -13,6 +13,7 @@ transport:
 
 provisioner:
   name: chef_zero
+  chef_license: accept
 
 verifier:
   name: inspec
