@@ -30,7 +30,6 @@
       "cookbook_paths": ["./cookbooks"],
       "type": "chef-solo",
       "run_list":["node_cookbook"],
-      "execute_command": "{{if .Sudo}}sudo {{end}}chef --chef-license accept-silent"
     }
   ]
 }
