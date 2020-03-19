@@ -28,7 +28,6 @@
 "provisioners": [
     {
       "cookbook_paths": ["cookbooks"],
-      "execute_command": "echo 'CHEF_LICENSE=accept'",
       "type": "chef-solo",
       "run_list":["node_cookbook"]
     }
