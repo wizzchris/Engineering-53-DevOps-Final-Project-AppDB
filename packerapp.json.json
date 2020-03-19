@@ -26,8 +26,14 @@
     "ami_name": "ChristopherRogers-eng53-nodejs-{{timestamp}}"
   }],
 "provisioners": [
+    {
+      "type": "shell",
+      "inline":[
+          "ls -al /home/ubuntu",
+          "echo 'CHEF_LICENSE=accept'"
+      ]
+    },
     {     
-      "execute_command": "{{if .Sudo}}sudo {{end}}chef-solo --chef-license accept-silent -c /tmp/packer-chef-solo/solo.rb",
       "type": "chef-solo",
       "cookbook_paths": ["./cookbooks"],
       "run_list":["node_cookbook::default"]
