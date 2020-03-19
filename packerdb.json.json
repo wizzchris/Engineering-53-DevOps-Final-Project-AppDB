@@ -28,7 +28,7 @@
   "provisioners": [
     {
       "cookbook_paths": ["./cookbooks"],
-      "execute_command": "{{if .Sudo}}sudo {{end}}chef-solo --chef-license accept-silent -c {{.ConfigPath}} -j /tmp/node.json",
+      "execute_command": "{{if .Sudo}}sudo {{end}}chef-solo --chef-license accept-silent",
       "type": "chef-solo",
       "run_list":["mongodb_cookbook::default"]
     }
