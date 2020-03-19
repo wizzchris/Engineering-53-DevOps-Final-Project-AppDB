@@ -27,10 +27,10 @@
   }],
 "provisioners": [
     {
+      "execute_command": "echo CHEF_LICENSE=accept",
       "cookbook_paths": ["./cookbooks"],
       "type": "chef-solo",
-      "run_list":["node_cookbook"],
-      "execute_command": "echo CHEF_LICENSE=accept"
+      "run_list":["node_cookbook"]
     }
   ]
 }
