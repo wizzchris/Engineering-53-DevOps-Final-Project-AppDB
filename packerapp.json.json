@@ -25,10 +25,11 @@
     "ssh_username": "ubuntu",
     "ami_name": "ChristopherRogers-eng53-nodejs-{{timestamp}}"
   }],
-"provisioners": [
-  {
-    "cookbook_paths":  ["cookbooks", "site-cookbooks"],
-    "execute_command": "{{if .Sudo}}sudo {{end}}chef-solo --chef-license accept-silent -c {{.ConfigPath}} -j /tmp/node.json",
-    "type":            "chef-solo"
-  }
-]
+  "provisioners": [
+    {
+      "cookbook_paths":  ["cookbooks", "site-cookbooks"],
+      "execute_command": "{{if .Sudo}}sudo {{end}}chef-solo --chef-license accept-silent -c {{.ConfigPath}} -j /tmp/node.json",
+      "type":            "chef-solo"
+    }
+  ]
+}
