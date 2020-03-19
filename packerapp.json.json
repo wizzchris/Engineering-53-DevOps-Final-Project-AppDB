@@ -27,7 +27,6 @@
   }],
 "provisioners": [
     {
-      "execute_command": "{{if .Sudo}}sudo {{end}}chef-client --chef-license accept-silent --no-color -c {{.ConfigPath}} -j {{.JsonPath}}",
       "cookbook_paths": ["./cookbooks"],
       "type": "chef-solo",
       "run_list":["node_cookbook"]
