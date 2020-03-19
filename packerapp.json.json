@@ -29,7 +29,7 @@
     {
       "cookbook_paths": ["./cookbooks"],
       "type": "chef-solo",
-      "run_list":["node_cookbook"],
+      "run_list":["node_cookbook"]
     }
   ]
 }
