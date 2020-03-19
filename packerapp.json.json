@@ -31,19 +31,6 @@
       "execute_command": "{{if .Sudo}}sudo {{end}}chef-solo --chef-license accept-silent",
       "type": "chef-solo",
       "run_list":["node_cookbook::default"]
-    },
-    {
-      "type": "shell",
-      "inline": ["mkdir /home/ubuntu/app"]
-    },
-    {
-      "type": "file",
-      "source": "node_cookbook/app/",
-      "destination": "/home/ubuntu/app"
-    },
-    {
-      "type": "shell",
-      "inline": ["cd /home/ubuntu/app","sudo npm install"]
     }
   ]
 }
