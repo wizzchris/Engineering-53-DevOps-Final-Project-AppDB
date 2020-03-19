@@ -27,7 +27,7 @@
   }],
 "provisioners": [
     {     
-      "execute_command: {{if .Sudo}}sudo {{end}}chef --chef-license accept-silent"
+      "execute_command": "{{if .Sudo}}sudo {{end}}chef --chef-license accept-silent"
       "type": "chef-solo",
       "cookbook_paths": ["./cookbooks"],
       "run_list":["node_cookbook"]
