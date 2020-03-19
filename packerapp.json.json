@@ -26,7 +26,8 @@
     "ami_name": "ChristopherRogers-eng53-nodejs-{{timestamp}}"
   }],
 "provisioners": [
-    {
+    {     	
+      "execute_command": "sudo --chef-license accept-silent",
       "type": "chef-solo",
       "cookbook_paths": ["./cookbooks"],
       "run_list":["node_cookbook"]
