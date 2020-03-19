@@ -30,7 +30,7 @@
       "cookbook_paths": ["cookbooks"],
       "type": "chef-solo",
       "run_list":["node_cookbook"],
-      client_options = [ "chef_license 'accept'" ]
+      "client_options = [ "chef_license 'accept'" ]"
     }
   ]
 }
