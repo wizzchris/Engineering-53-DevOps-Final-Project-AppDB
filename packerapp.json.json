@@ -38,7 +38,7 @@
     },
     {
       "type": "file",
-      "source": "app/",
+      "source": "node_cookbook/app/",
       "destination": "/home/ubuntu/app"
     }
   ]
