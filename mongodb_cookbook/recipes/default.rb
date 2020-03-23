@@ -17,6 +17,11 @@ include_recipe 'apt'
 
 package 'mongodb-org'
 
+service "mongod" do
+
+  action [:enable, :start]
+
+end
 template '/home/ubuntu/mongod.conf' do
   source 'mongod.conf.erb'
   variables(
@@ -27,10 +32,12 @@ end
 
 link '/etc/mongod.conf' do
   to '/home/ubuntu/mongod.conf'
+  notifies :restart, 'service[mongod]'
 end
 
 template '/lib/systemd/system/mongod.service' do
   source 'mongod.service.erb'
+  notifies :restart, 'service[mongod]'
 end
 
 link '/etc/mongod.service' do
