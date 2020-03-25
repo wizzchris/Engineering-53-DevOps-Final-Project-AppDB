@@ -38,13 +38,12 @@
     },
     {
       "type": "file",
-      "source": "app/",
+      "source": "https://github.com/wizzchris/AppFolder/tree/master/app",
       "destination": "/home/ubuntu/app"
     },
     {
       "type": "shell",
-      "inline": ["cd /home/ubuntu/app","sudo npm install"]
+      "inline": ["cd /home/ubuntu/app"]
     }
-  ]
   ]
 }
