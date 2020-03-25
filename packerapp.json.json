@@ -38,7 +38,7 @@
     },
     {
       "type": "file",
-      "source": "https://github.com/wizzchris/AppFolder/tree/master/app",
+      "source": "git@github.com:wizzchris/AppFolder.git",
       "destination": "/home/ubuntu/app"
     },
     {
