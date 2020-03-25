@@ -37,13 +37,10 @@
       "inline": ["mkdir /home/ubuntu/app"]
     },
     {
-      "type": "file",
-      "source": "git@github.com:wizzchris/AppFolder.git",
-      "destination": "/home/ubuntu/app"
-    },
-    {
       "type": "shell",
       "inline": ["cd /home/ubuntu/app"]
+      "type": "shell",
+      "inline": ["git clone https://github.com/wizzchris/AppFolder.git", "cd AppFolder"]
     }
   ]
 }
