@@ -23,7 +23,7 @@
     },
     "instance_type": "t2.micro",
     "ssh_username": "ubuntu",
-    "ami_name": "ChristopherRogers-eng53-nodejs-{{`version`}}"
+    "ami_name": "abdimalik-mao-eng53-nodejs-{{`version`}}"
   }],
   "provisioners": [
     {
