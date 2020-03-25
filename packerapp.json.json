@@ -40,7 +40,7 @@
       "type": "shell",
       "inline": ["cd /home/ubuntu/app"]
       "type": "shell",
-      "inline": ["git clone https://github.com/wizzchris/AppFolder.git", "cd AppFolder"]
+      "inline": ["sudo apt-get install git", "git clone https://github.com/wizzchris/AppFolder.git", "cd AppFolder"]
     }
   ]
 }
